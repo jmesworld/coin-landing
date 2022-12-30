@@ -1,11 +1,9 @@
 import { styled } from "../../../stitches.config";
 import { montserrat } from "../../assets/fonts";
 
-const StyledCard = styled("div", {
+const CardContainer = styled("div", {
   marginX: "auto",
   marginY: "40px",
-  border: "2px solid",
-  borderRadius: 5,
   variants: {
     size: {
       1: {
@@ -20,7 +18,10 @@ const StyledCard = styled("div", {
     },
   },
 });
-
+const StyledCard = styled("div", {
+  border: "2px solid",
+  borderRadius: 5,
+});
 const Body = styled("p", {
   fontSize: "10pt",
   letterSpacing: "0.02em",
@@ -28,6 +29,8 @@ const Body = styled("p", {
 });
 
 const Link = styled("a", {
+  display: "block",
+  width: "100%",
   textDecoration: "none",
   color: "black",
   "&:hover": {
@@ -41,15 +44,17 @@ export interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ href, innerHtml }) => {
   return (
-    <Link
-      target="_blank"
-      rel="noreferrer"
-      href={href}
-      className={montserrat.className}
-    >
-      <StyledCard size={{ "@initial": "1", "@bp1": "1" }}>
-        <Body className={montserrat.className}>{innerHtml}</Body>
-      </StyledCard>
-    </Link>
+    <CardContainer size={{ "@initial": "1", "@bp1": "1" }}>
+      <Link
+        target="_blank"
+        rel="noreferrer"
+        href={href}
+        className={montserrat.className}
+      >
+        <StyledCard size={{ "@initial": "1", "@bp1": "1" }}>
+          <Body className={montserrat.className}>{innerHtml}</Body>
+        </StyledCard>
+      </Link>
+    </CardContainer>
   );
 };
