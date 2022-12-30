@@ -2,16 +2,20 @@ import { CardProps } from "../Card";
 
 const jmesCards: CardProps[] = [
   {
-    href: "https://docs.jmes.cloud",
-    innerHtml: "Docs",
+    href: "https://github.com/jmesworld/whitepaper/blob/main/jmes-coin-whitepaper.md",
+    innerHtml: "Whitepaper",
+  },
+  {
+    href: "http://explorer.jmes.cloud:3000/",
+    innerHtml: "Block Explorer",
   },
   {
     href: "https://gov.jmes.cloud",
     innerHtml: "Governance",
   },
   {
-    href: "http://explorer.jmes.cloud:3000/",
-    innerHtml: "Blockchain",
+    href: "https://docs.jmes.cloud",
+    innerHtml: "Documentation",
   },
   {
     href: "https://trello.com/b/oJCXdSrM/jmes-incubator",
@@ -22,13 +26,9 @@ const jmesCards: CardProps[] = [
     innerHtml: "Community",
   },
   {
-    href: "https://github.com/jmesworld/whitepaper/blob/main/jmes-coin-whitepaper.md",
-    innerHtml: "Whitepaper",
-  },
-  {
     href: "https://www.keplr.app/download",
     innerHtml: "Wallet",
-  },
+  }
 ];
 
 export default jmesCards;
