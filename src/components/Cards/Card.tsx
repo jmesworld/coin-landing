@@ -1,6 +1,7 @@
 import { styled } from "../../../stitches.config";
+import { montserrat } from "../../assets/fonts";
 
-const Container = styled("div", {
+const StyledCard = styled("div", {
   marginX: "auto",
   marginY: "40px",
   border: "2px solid",
@@ -26,11 +27,13 @@ const Body = styled("p", {
   wordSpacing: "0.16em",
 });
 
-const StyledLink = styled("a", {
+const Link = styled("a", {
   textDecoration: "none",
-  color: "$purple600",
+  color: "black",
+  "&:hover": {
+    color: "$purple600",
+  },
 });
-
 export interface CardProps {
   href: string;
   innerHtml: string;
@@ -38,10 +41,15 @@ export interface CardProps {
 
 export const Card: React.FC<CardProps> = ({ href, innerHtml }) => {
   return (
-    <Container size={{ "@initial": "1", "@bp1": "1" }}>
-      <Body>
-        <StyledLink href={href}>{innerHtml}</StyledLink>
-      </Body>
-    </Container>
+    <Link
+      target="_blank"
+      rel="noreferrer"
+      href={href}
+      className={montserrat.className}
+    >
+      <StyledCard size={{ "@initial": "1", "@bp1": "1" }}>
+        <Body className={montserrat.className}>{innerHtml}</Body>
+      </StyledCard>
+    </Link>
   );
 };
