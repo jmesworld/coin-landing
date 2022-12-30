@@ -18,7 +18,7 @@ export default class Document extends NextDocument {
           <style id="jmes" dangerouslySetInnerHTML={{ __html: getCssText() }} />
         </Head>
 
-        <body style={{ margin: 0 }}>
+        <body style={{ margin: 0, backgroundColor: "#c7b6fc" }}>
           <Main />
           <NextScript />
         </body>
