@@ -51,7 +51,7 @@ export const Card: React.FC<CardProps> = ({ href, innerHtml }) => {
         href={href}
         className={montserrat.className}
       >
-        <StyledCard size={{ "@initial": "1", "@bp1": "1" }}>
+        <StyledCard>
           <Body className={montserrat.className}>{innerHtml}</Body>
         </StyledCard>
       </Link>
