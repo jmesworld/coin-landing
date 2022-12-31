@@ -10,6 +10,10 @@ const jmesCards: CardProps[] = [
     innerHtml: "Block Explorer",
   },
   {
+    href: "http://faucet.jmes.cloud",
+    innerHtml: "Faucet",
+  },
+  {
     href: "https://gov.jmes.cloud",
     innerHtml: "Governance",
   },
@@ -18,11 +22,11 @@ const jmesCards: CardProps[] = [
     innerHtml: "Documentation",
   },
   {
-    href: "https://trello.com/b/oJCXdSrM/jmes-incubator",
+    href: "http://incubator.jmes.cloud",
     innerHtml: "Incubator",
   },
   {
-    href: "https://discord.com/invite/NVsnRWu8",
+    href: "http://discord.jmes.cloud",
     innerHtml: "Community",
   },
   {
