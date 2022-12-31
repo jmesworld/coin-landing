@@ -6,7 +6,7 @@ const jmesCards: CardProps[] = [
     innerHtml: "Whitepaper",
   },
   {
-    href: "http://explorer.jmes.cloud:3000/",
+    href: "http://explorer.jmes.cloud",
     innerHtml: "Block Explorer",
   },
   {
