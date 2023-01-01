@@ -6,11 +6,11 @@ const jmesCards: CardProps[] = [
     innerHtml: "Documentation",
   },
   {
-    href: "http://explorer.jmes.cloud",
+    href: "http://explorer.jmes.cloud/blocks",
     innerHtml: "Blockchain",
   },
   {
-    href: "https://gov.jmes.cloud",
+    href: "https://docs.jmes.cloud/learn/app/",
     innerHtml: "App",
   },  
   {

@@ -6,7 +6,7 @@ interface CardSectionProps {
 }
 const StyledCardSection = styled("div", {
   marginTop: "40px",
-  marginBottom: "100px",
+  marginBottom: "80px",
 });
 
 const CardSection: React.FC<CardSectionProps> = ({ cards }) => {
