@@ -37,16 +37,22 @@ const Headline = styled("p", {
   letterSpacing: "0.03em",
   wordSpacing: "0.04em",
 });
-
+const SubHeadline = styled("p", {
+  marginY: "unset",
+  fontSize: "16pt",
+  letterSpacing: "0.14em",
+  wordSpacing: "0.22em",
+});
 export default function Home() {
   return (
     <Box>
       <Head>
-        <title>JMES Coin</title>
+        <title>JMES Blockchain</title>
       </Head>
       <Header />
       <ContentContainer>
-        <Headline className={coolvetica.className}>JMES COIN</Headline>
+        <Headline className={coolvetica.className}>JMES</Headline>
+        <SubHeadline className={coolvetica.className}>Blockchain & App</SubHeadline>
         <CardSection cards={jmesCards} />
       </ContentContainer>
       <Footer />
