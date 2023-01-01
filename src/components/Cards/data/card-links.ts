@@ -2,29 +2,25 @@ import { CardProps } from "../Card";
 
 const jmesCards: CardProps[] = [
   {
-    href: "https://github.com/jmesworld/whitepaper/blob/main/jmes-coin-whitepaper.md",
-    innerHtml: "Whitepaper",
-  },
-  {
-    href: "http://explorer.jmes.cloud",
-    innerHtml: "Block Explorer",
-  },
-  {
-    href: "http://faucet.jmes.cloud",
-    innerHtml: "Faucet",
-  },
-  {
-    href: "https://gov.jmes.cloud",
-    innerHtml: "Governance",
-  },
-  {
     href: "https://docs.jmes.cloud",
     innerHtml: "Documentation",
   },
   {
+    href: "http://explorer.jmes.cloud",
+    innerHtml: "Blockchain",
+  },
+  {
+    href: "https://gov.jmes.cloud",
+    innerHtml: "App",
+  },  
+  {
+    href: "https://gov.jmes.cloud",
+    innerHtml: "Governance",
+  },  
+  {
     href: "http://incubator.jmes.cloud",
     innerHtml: "Incubator",
-  },
+  },  
   {
     href: "http://discord.jmes.cloud",
     innerHtml: "Community",
@@ -32,7 +28,11 @@ const jmesCards: CardProps[] = [
   {
     href: "https://www.keplr.app/download",
     innerHtml: "Wallet",
-  }
+  },
+  {
+    href: "http://faucet.jmes.cloud",
+    innerHtml: "Faucet",
+  }  
 ];
 
 export default jmesCards;
