@@ -9,6 +9,7 @@ export default class Document extends NextDocument {
       <Html lang="en">
         <Head>
           <style id="jmes" dangerouslySetInnerHTML={{ __html: getCssText() }} />
+          <link rel="shortcut icon" href="/favicon.ico" />
         </Head>
 
         <body
